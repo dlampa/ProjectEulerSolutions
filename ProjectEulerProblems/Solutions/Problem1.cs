@@ -20,7 +20,7 @@ namespace ProjectEulerSolutions.Solutions
                 {
                     // Add i to result if true
                     result += i;
-                    Console.WriteLine($"{i}:{result}");
+                    if (output) Console.WriteLine($"{i}:{result}");
                 }
             }
 
