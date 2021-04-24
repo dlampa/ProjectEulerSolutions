@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ProjectEulerSolutions.Solutions
 {
     public static class Problem8
     {
-        public static long solve(bool output = false)
+        public static long Solve(bool output = false)
         {
             /*  The four adjacent digits in the 1000 - digit number that have the greatest product are 9 × 9 × 8 × 9 = 5832.
 
@@ -48,7 +44,7 @@ namespace ProjectEulerSolutions.Solutions
               "9840385096245544436298123098787992724428490918884580156166097919133875499200524063" +
               "6899125607176060588611646710940507754100225698315520005593572972571636269561882670" +
               "428252483600823257530420752963450";
-            const int iterSize = 4; // Number of adjacent digits to check
+            const int iterSize = 13; // Number of adjacent digits to check
 
             long product; // Store the product during iterations
             long result = 1; // Store the result
@@ -72,7 +68,7 @@ namespace ProjectEulerSolutions.Solutions
                     // Continue if the last character from the previous iteration was greater than the
                     // new last char of the current iteration
                     lastChar = '0';
-                    Console.WriteLine("");
+                    if (output) Console.WriteLine("");
                     continue;
                 }
                 else

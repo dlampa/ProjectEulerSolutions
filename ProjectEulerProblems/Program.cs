@@ -7,8 +7,8 @@ namespace ProjectEulerSolutions
     {
         static void Main(string[] args)
         {
-            long prob8Result = Problem8.solve(output:true);
-            Console.WriteLine(prob8Result);
+            Console.WriteLine($"Problem 1: {Problem1.Solve()}");
+            Console.WriteLine($"Problem 8: {Problem8.Solve()}");
         }
 
        
