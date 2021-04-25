@@ -46,7 +46,7 @@ namespace ProjectEulerSolutions.Solutions
                 if ((n % 2 == 0) | (n % 3 == 0)) return false;
 
                 // Check for all integers between 6k-1 = 5 and 6k+1 <= sqrt(n)
-                for (int k = 1; k <= (float)((Math.Sqrt(n) - 1) / 6); k++)
+                for (int k = 1; k <= (float)((Math.Sqrt(n) + 1) / 6); k++)
                 {
                     // If it is divisible by (6k+1) or (6k-1), it's not a prime number
                     if ((n % (6 * k + 1) == 0) || (n % (6 * k - 1) == 0)) return false;
