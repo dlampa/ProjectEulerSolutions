@@ -16,7 +16,7 @@ namespace ProjectEulerSolutions.Solutions
             for (int i = 10; i < 1000; i++)
             {
                 // Check if the number is divisible either by 3 or 5
-                if ((i % 3 == 0) | (i % 5 == 0))
+                if ((i % 3 == 0) || (i % 5 == 0))
                 {
                     // Add i to result if true
                     result += i;

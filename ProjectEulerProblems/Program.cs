@@ -15,6 +15,7 @@ namespace ProjectEulerSolutions
             Console.WriteLine($"Problem 6: {Problem6.Solve()}");
             Console.WriteLine($"Problem 7: {Problem7.Solve()}");
             Console.WriteLine($"Problem 8: {Problem8.Solve()}");
+            Console.WriteLine($"Problem 9: {Problem9.Solve()}");
         }
 
 

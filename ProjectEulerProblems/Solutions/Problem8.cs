@@ -77,7 +77,7 @@ namespace ProjectEulerSolutions.Solutions
                     // Calculate the product of individual digits
                     foreach (char num in numOfInterest)
                     {
-                        product = product * Int32.Parse(num.ToString());
+                        product *= Int32.Parse(num.ToString());
                     }
 
                     if (output) Console.WriteLine($", {product}");

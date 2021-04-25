@@ -18,10 +18,10 @@ namespace ProjectEulerSolutions.Solutions
             int[] seed = new int[2] { 1, 1 };
 
             // Loop until the sum reaches 4000000
-            while (sum<=4000000)
+            while (sum <= 4000000)
             {
                 // Sum the previous two terms
-                sum = seed[0] + seed[1]; 
+                sum = seed[0] + seed[1];
                 // Write the sum and the previous term back to the seed array
                 seed[0] = seed[1];
                 seed[1] = sum;

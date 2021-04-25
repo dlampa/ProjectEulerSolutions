@@ -26,9 +26,9 @@ namespace ProjectEulerSolutions.Solutions
                 bool isPrime(int n)
                 {
                     // If n is between 1(exclusive) and 3(inclusive) it's a prime number
-                    if ((n > 1) & (n <= 3)) return true;
+                    if ((n > 1) && (n <= 3)) return true;
                     // If n is divisible by 2 or 3, n is not a prime number
-                    if ((n % 2 == 0) | (n % 3 == 0)) return false;
+                    if ((n % 2 == 0) || (n % 3 == 0)) return false;
 
                     // Primality test: https://en.wikipedia.org/wiki/Primality_test
                     for (int k = 1; k <= ((Math.Sqrt(n)+1)/6); k++)

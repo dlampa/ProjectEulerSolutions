@@ -43,7 +43,7 @@ namespace ProjectEulerSolutions.Solutions
                 // If number is larger than 1 and less or equal than 3, it's a prime number
                 if ((n > 1) && (n <= 3)) return true;
                 // If it's divisible by 2 or 3, it's not a prime number
-                if ((n % 2 == 0) | (n % 3 == 0)) return false;
+                if ((n % 2 == 0) || (n % 3 == 0)) return false;
 
                 // Check for all integers between 6k-1 = 5 and 6k+1 <= sqrt(n)
                 for (int k = 1; k <= (float)((Math.Sqrt(n) + 1) / 6); k++)
@@ -56,12 +56,12 @@ namespace ProjectEulerSolutions.Solutions
             }
 
             // Check between sqrt(num)-1 down to 1, in steps of -2 (all odd numbers)
-            for (long i = (long)Math.Sqrt(num)-1; i > 0; i-=2)
+            for (long i = (long)Math.Sqrt(num) - 1; i > 0; i -= 2)
             {
                 // If it's a prime number and a factor
-                if (isPrime(i) && (num % i == 0)) return i; 
+                if (isPrime(i) && (num % i == 0)) return i;
             }
-            
+
             return 0;
         }
 
